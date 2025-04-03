@@ -1,1 +1,178 @@
-hi
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkateManager</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <!-- Google Fonts: Montserrat -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #1a1a2e url('img/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #e0e0e0;
+            position: relative;
+            overflow-y: auto;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(10px);
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        .logo img {
+            width: 100px; /* Tamanho quadrado para a imagem */
+            height: 100px;
+            margin-bottom: 0.5rem;
+        }
+
+        .logo p {
+            font-weight: lighter;
+            font-size: 0.9rem;
+            color: #b0b0cc;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            width: 100%;
+            max-width: 200px;
+            padding: 0.8rem;
+            background: #2a2a3d50;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s, border-color 0.3s;
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .btn:hover {
+            background: #3a3a5c;
+            border-color: #b0b0cc;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .feature-box {
+            background: #2a2a3d50;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .feature-box i {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-box h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-box p {
+            font-size: 0.9rem;
+            color: #b0b0cc;
+        }
+
+        /* Cores roxas escuras para os ícones das features */
+        .feature-box:nth-child(1) i {
+            color: #ff61a6; /* Rosa-roxo */
+        }
+
+        .feature-box:nth-child(2) i {
+            color: #6bffa6; /* Verde-roxo claro */
+        }
+
+        .feature-box:nth-child(3) i {
+            color: #d1a6ff; /* Roxo-amarelado */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.png"> <!-- Substitua por sua imagem -->
+            <br>SkateManager - Easily change Cheaters Cheetah cfgs
+            <p>© 2025 Frier3n</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-box">
+                <i class="bi bi-feather"></i>
+                <h3>Lightweight</h3>
+                <p>Light as a feather, heavy on utility.</p>
+            </div>
+            <div class="feature-box">
+                <i class="bi bi-shield-lock"></i>
+                <h3>Safe Tool</h3>
+                <p>Open source, no secrets.</p>
+            </div>
+            <div class="feature-box">
+                <i class="bi bi-gear"></i>
+                <h3>Easy to use</h3>
+                <p>Manage your cfgs easily.</p>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="https://github.com/frier3n/SkateManager" target="_blank" class="btn"><i class="bi bi-github"></i> GITHUB</a>
+            <a href="https://github.com/frier3n/SkateManager/releases/latest/download/sm.zip" class="btn"><i class="bi bi-download"></i> DOWNLOAD</a>
+        </div>
+    </div>
+</body>
+</html>
